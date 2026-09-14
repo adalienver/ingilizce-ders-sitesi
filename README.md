@@ -8,4 +8,4 @@ I am an English Teacher and researcher with a Master's degree in English Languag
 - 📚 **Research:** My recent Master's thesis provides a comparative analysis of Ecofeminism and Dystopia in *The Handmaid's Tale* and *Brave New World*.
 - 🤖 **Tech Interests:** AI data evaluation, large language model comparison, and Computer-Assisted Translation (SDL Trados Studio).
 
-📫 **Reach me at:** [Your Email or LinkedIn]
+📫 **Reach me at:** [enveradali195 gmail.com]
