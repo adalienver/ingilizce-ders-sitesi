@@ -1,11 +1,331 @@
-[gemini-code-1789418663456.md](https://github.com/user-attachments/files/32211613/gemini-code-1789418663456.md)
-### Hi there, I'm Enver 👋
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Social Preview (Instagram / LinkedIn / Twitter) -->
+  <title>Enver Adalı | English Literature & Digital Humanities</title>
+  <meta name="description" content="Ecofeminist Approaches in Dystopian Narratives: The Domination of Nature and Women – Academic research by Enver Adalı, M.A. English Language & Literature.">
+  <meta property="og:title" content="Ecofeminist Approaches in Dystopian Narratives - Enver Adalı">
+  <meta property="og:description" content="A critical exploration of the intertwined oppression of nature and women in dystopian literature with theoretical frameworks from Carolyn Merchant and Karen J. Warren.">
+  <meta property="og:url" content="https://adalienver.github.io/ingilizce-ders-sitesi/">
+  <meta property="og:type" content="website">
 
-I am an English Teacher and researcher with a Master's degree in English Language and Literature. My academic background is rooted in textual analysis, but I am actively exploring how technology intersects with language learning and literature. 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
-- 🔭 **Current Focus:** Learning Android application development with Kotlin.
-- 💡 **Goal:** Building specialized dictionary and vocabulary tools for literary analysis.
-- 📚 **Research:** My recent Master's thesis provides a comparative analysis of Ecofeminism and Dystopia in *The Handmaid's Tale* and *Brave New World*.
-- 🤖 **Tech Interests:** AI data evaluation, large language model comparison, and Computer-Assisted Translation (SDL Trados Studio).
+  <style>
+    :root {
+      --bg: #fbfbfd;
+      --card-bg: #ffffff;
+      --primary: #1e3a5f;
+      --accent: #2c6e49;
+      --text: #2b2b2b;
+      --muted: #666666;
+      --border: #e6e6e6;
+    }
 
-📫 **Reach me at:** [enveradali195 gmail.com]
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 0 1.25rem 4rem;
+    }
+
+    .container { max-width: 820px; margin: 0 auto; }
+
+    header {
+      padding: 4rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+
+    h1.name {
+      font-family: 'Cinzel', serif;
+      font-size: 2.3rem;
+      color: var(--primary);
+      letter-spacing: 0.5px;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-size: 1.05rem;
+      color: var(--muted);
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .badge {
+      background: #eef2f6;
+      color: var(--primary);
+      font-size: 0.82rem;
+      font-weight: 500;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+    }
+
+    section { margin-top: 3.5rem; }
+
+    h2.section-title {
+      font-family: 'Lora', serif;
+      font-size: 1.6rem;
+      color: var(--primary);
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .article-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2.2rem;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+    }
+
+    .article-header h3 {
+      font-family: 'Lora', serif;
+      font-size: 1.5rem;
+      color: #1a1a1a;
+      line-height: 1.4;
+      margin-bottom: 0.8rem;
+    }
+
+    .meta-details {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 1.5rem;
+    }
+
+    .abstract-box {
+      background: #f7faf8;
+      border-left: 4px solid var(--accent);
+      padding: 1.2rem;
+      margin-bottom: 1.5rem;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+      font-style: italic;
+    }
+
+    .article-body p {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      margin-bottom: 1.2rem;
+      color: #333333;
+    }
+
+    .quote {
+      font-style: italic;
+      color: var(--primary);
+      padding: 0.8rem 1.2rem;
+      background: #f0f4f8;
+      border-radius: 6px;
+      margin: 1.2rem 0;
+      display: block;
+    }
+
+    .pitch-card {
+      background: linear-gradient(135deg, #1e3a5f 0%, #152840 100%);
+      color: #ffffff;
+      border-radius: 12px;
+      padding: 2.2rem;
+      margin-top: 1rem;
+    }
+
+    .pitch-card h3 {
+      font-family: 'Lora', serif;
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+      color: #ffd166;
+    }
+
+    .pitch-card p, .pitch-card ul { color: #e0e8f0; font-size: 0.98rem; }
+    .pitch-card ul { margin-left: 1.5rem; margin-bottom: 1.5rem; }
+
+    .btn {
+      display: inline-block;
+      background-color: #ffd166;
+      color: #1e3a5f;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.9; }
+
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+    }
+
+    /* PDF Button */
+    .pdf-btn {
+      display: inline-block;
+      background: #1e3a5f;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: all 0.2s;
+    }
+    .pdf-btn:hover { background: #152840; }
+
+    /* Print-friendly styles */
+    @media print {
+      body { background: white; padding: 0; }
+      .container { max-width: 100%; }
+      .pitch-card, .btn, footer { display: none !important; }
+      .article-card { box-shadow: none; border: 1px solid #ccc; }
+      .section-title { page-break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1 class="name">Enver Adalı</h1>
+      <p class="tagline">English Literature Researcher | Educator | Digital Humanities Enthusiast</p>
+      <div class="badges">
+        <span class="badge">M.A. English Language & Literature</span>
+        <span class="badge">Ecofeminist Theory</span>
+        <span class="badge">Dystopian Narratives</span>
+        <span class="badge">Digital Curriculum & Web Tech</span>
+      </div>
+    </header>
+
+    <!-- Main Article -->
+    <section id="article">
+      <h2 class="section-title">Featured Research & Publication</h2>
+      <article class="article-card">
+        <div class="article-header">
+          <h3>Ecofeminist Approaches in Dystopian Narratives: The Domination of Nature and Women</h3>
+          <p class="meta-details">Master's Thesis Monograph • Critical Ecocriticism & Biopolitics</p>
+        </div>
+
+        <div class="abstract-box">
+          <strong>Abstract:</strong> This paper investigates the conceptual and material intersections between patriarchal domination and ecological degradation within 20th-century dystopian literature. Drawing on ecofeminist frameworks articulated by Carolyn Merchant and Karen J. Warren, this study examines how Margaret Atwood’s <em>The Handmaid’s Tale</em> and Aldous Huxley’s <em>Brave New World</em> mirror the historical transition from organicism to mechanistic exploitation. In both narratives, the female reproductive body and the biosphere are systematically disassembled, moralized, and instrumentalized by totalizing states to enforce sociopolitical stability.
+        </div>
+
+        <div class="article-body">
+          <h4>1. Theoretical Framework: The Logic of Domination and the Mechanistic Worldview</h4>
+          <p>
+            Ecofeminist critical theory posits that the systematic exploitation of the biosphere and the historic subjugation of women share an ideological foundation rooted in Western patriarchal dualisms. In her foundational treatise <em>The Death of Nature</em>, Carolyn Merchant demonstrates how the Scientific Revolution supplanted the organic view of the Earth as a living mother with a mechanistic model that conceived nature as dead, inert matter designed for commercial penetration and mastery (Merchant 127). This shift legitimized the simultaneous mastery of ecological systems and the redefinition of feminine autonomy under scientific and legal rationalism.
+          </p>
+          <p>
+            Expanding this critique, Karen J. Warren identifies the operational motor of patriarchal hierarchies as the "logic of domination"—an oppressive conceptual framework that presumes moral superiority justifies subordination (Warren 46). Dystopian literature magnifies Warren's premise by illustrating totalizing regimes wherein institutional power formalizes this subordination into rigid biopolitical infrastructure.
+          </p>
+
+          <span class="quote">
+            "The logic of domination provides the moral premise that justifies subordination: value-hierarchical thinking maps difference into moral inferiority, rationalizing the containment of both feminine subjectivity and organic environments." (Warren 47)
+          </span>
+
+          <h4>2. Margaret Atwood’s Gilead: The Weaponization of Ecological Collapse</h4>
+          <p>
+            In Margaret Atwood’s <em>The Handmaid’s Tale</em>, Gilead’s theocratic apparatus emerges directly from cumulative anthropogenic disaster: nuclear contamination, toxic dumping, and chemical blights have induced widespread infertility. Rather than prompting holistic ecological restoration, the regime leverages environmental ruin to sanction absolute reproductive servitude. The female body is cleaved from individual subjectivity and reclassified strictly in agricultural and resource-based terminology.
+          </p>
+          <p>
+            Offred recounts how Handmaids are perceived by the state: <em>"We are two-legged wombs, that’s all: sacred vessels, ambulatory chalices"</em> (Atwood 136). The state's instrumental logic reaches its zenith in the binary segregation of female populations into productive livestock (Handmaids) and expendable detritus ("Unwomen"). Unwomen are deported to "the Colonies" to scrape radioactive soil and hazardous industrial waste until death (Atwood 248), literalizing the ecofeminist argument that the disposable female body is weaponized to absorb the shocks of industrial failure.
+          </p>
+
+          <h4>3. Huxley’s World State: Technocratic Eradication of Organic Attachment</h4>
+          <p>
+            While Atwood’s regime manages environmental disease, Aldous Huxley’s <em>Brave New World</em> presents an alternative dystopia where nature is not toxified, but hyper-rationalized, sterilized, and replaced by synthetic manufacture. In the World State, the organic mother has been eliminated through ectogenesis (the Bokanovsky Process), eradicating natural kinship and bodily maternity in favor of state-controlled hatcheries (Huxley 14).
+          </p>
+          <p>
+            Furthermore, the state recognizes that spontaneous organic affinity poses an existential threat to consumption-driven capitalism. In the infant conditioning rooms, lower-caste children are subjected to electric shocks and alarms whenever they touch blossoms:
+          </p>
+
+          <span class="quote">
+            "A love of nature keeps no factories busy. It was decided to abolish the love of nature, at any rate among the lower classes; to abolish the love of nature, but not the tendency to consume transport." (Huxley 23)
+          </span>
+
+          <p>
+            Huxley prefigures Merchant’s critique of the mechanized cosmos: by alienating humanity from natural rhythm and eliminating biological reproduction, the state achieves total psychological and somatic pacification.
+          </p>
+
+          <h4>4. Conclusion</h4>
+          <p>
+            Read together through an ecofeminist lens, Atwood and Huxley delineate two trajectories of the same totalitarian vector. Whether through Gilead's agrarian fundamentalism or the World State's hyper-technological eradication of maternity, dystopian fiction underscores that the subjugation of the ecological sphere and the suppression of female self-determination are indivisible mechanisms of authoritarian hegemony.
+          </p>
+
+          <!-- Works Cited -->
+          <hr style="margin: 2.5rem 0 1.5rem; border: none; border-top: 1px solid var(--border);">
+          <h4 style="font-family: 'Lora', serif; font-size: 1.25rem; margin-bottom: 1rem; color: var(--primary);">Works Cited</h4>
+          <div class="works-cited" style="font-size: 0.92rem; line-height: 1.65; color: #444;">
+            <p style="padding-left: 2rem; text-indent: -2rem; margin-bottom: 0.8rem;">
+              Atwood, Margaret. <em>The Handmaid’s Tale</em>. Anchor Books, 1998.
+            </p>
+            <p style="padding-left: 2rem; text-indent: -2rem; margin-bottom: 0.8rem;">
+              Huxley, Aldous. <em>Brave New World</em>. Harper Perennial Modern Classics, 2006.
+            </p>
+            <p style="padding-left: 2rem; text-indent: -2rem; margin-bottom: 0.8rem;">
+              Merchant, Carolyn. <em>The Death of Nature: Women, Ecology, and the Scientific Revolution</em>. Harper & Row, 1980.
+            </p>
+            <p style="padding-left: 2rem; text-indent: -2rem; margin-bottom: 0.8rem;">
+              Warren, Karen J. <em>Ecofeminist Philosophy: A Western Perspective on What It Is and Why It Matters</em>. Rowman & Littlefield Publishers, 2000.
+            </p>
+          </div>
+
+          <!-- PDF Download Button -->
+          <div style="text-align: center; margin-top: 2rem;">
+            <a href="#" onclick="window.print(); return false;" class="pdf-btn">📥 Download / Print as PDF</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Marmara University Pitch -->
+    <section id="academic-services">
+      <h2 class="section-title">Academic Collaboration & Digital Humanities</h2>
+      <div class="pitch-card">
+        <h3>To the Marmara University English Language & Literature Faculty</h3>
+        <p>Dear Professors and Colleagues,</p>
+        <p>
+          As an English Literature researcher passionately bridging the gap between literary critique and digital humanities, I develop open-access web repositories, customized academic archive portfolios, and pedagogical digital tools.
+        </p>
+        <ul>
+          <li><strong>Digital Portfolios:</strong> Customized GitHub Pages and repositories for faculty research output, seminar archives, and lecture notes.</li>
+          <li><strong>Curriculum & Language Portals:</strong> Interactive vocabulary, literary concordance platforms, and student reading portals.</li>
+          <li><strong>Digital Humanities Collaboration:</strong> Assisting research projects that require computational text tools and accessible online presentation.</li>
+        </ul>
+        <p>
+          If you or your research group would like a personalized academic website, syllabus database, or digital project hub built at no cost, I would be honored to assist you.
+        </p>
+        <a href="mailto:enveradali195@gmail.com" class="btn">Get in Touch via Email</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© Enver Adalı • Marmara University Academic Outreach & Digital Archives</p>
+      <p>Reach me directly: <a href="mailto:enveradali195@gmail.com" style="color: var(--primary);">enveradali195@gmail.com</a></p>
+    </footer>
+  </div>
+
+</body>
+</html>
