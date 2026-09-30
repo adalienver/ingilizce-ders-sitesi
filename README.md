@@ -9,7 +9,6 @@
   <meta name="description" content="Academic portfolio of Enver Adalı. Ecofeminist research in dystopian literature, translation technologies, and digital humanities.">
   <meta property="og:title" content="Enver Adalı — Literary Research & Translation Technologies">
   <meta property="og:description" content="Ecofeminist Approaches in Dystopian Narratives & Academic Workshops in CAT Tools.">
-  <meta property="og:url" content="https://adalienver.github.io/ingilizce-ders-sitesi/">
   <meta property="og:type" content="website">
 
   <!-- Google Fonts -->
