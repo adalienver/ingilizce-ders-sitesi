@@ -3,61 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO & Social Preview (Instagram / LinkedIn / Twitter) -->
-  <title>Enver Adalı | English Literature & Digital Humanities</title>
-  <meta name="description" content="Ecofeminist Approaches in Dystopian Narratives: The Domination of Nature and Women – Academic research by Enver Adalı, M.A. English Language & Literature.">
-  <meta property="og:title" content="Ecofeminist Approaches in Dystopian Narratives - Enver Adalı">
-  <meta property="og:description" content="A critical exploration of the intertwined oppression of nature and women in dystopian literature with theoretical frameworks from Carolyn Merchant and Karen J. Warren.">
+
+  <!-- Metadata & Social Previews -->
+  <title>Enver Adalı | Academic Research & Digital Humanities</title>
+  <meta name="description" content="Academic portfolio of Enver Adalı. Ecofeminist research in dystopian literature, translation technologies, and digital humanities.">
+  <meta property="og:title" content="Enver Adalı — Literary Research & Translation Technologies">
+  <meta property="og:description" content="Ecofeminist Approaches in Dystopian Narratives & Academic Workshops in CAT Tools.">
   <meta property="og:url" content="https://adalienver.github.io/ingilizce-ders-sitesi/">
   <meta property="og:type" content="website">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg: #fbfbfd;
+      --bg: #f4f6f9;
       --card-bg: #ffffff;
-      --primary: #1e3a5f;
-      --accent: #2c6e49;
-      --text: #2b2b2b;
-      --muted: #666666;
-      --border: #e6e6e6;
+      --primary: #15325b;
+      --primary-hover: #0c1e38;
+      --accent-green: #1e6b47;
+      --accent-gold: #c59b27;
+      --text-dark: #1f2937;
+      --text-muted: #5a6578;
+      --border-color: #e2e8f0;
+      --border-focus: #b9c7d9;
+      --shadow-sm: 0 2px 4px rgba(21, 50, 91, 0.04);
+      --shadow-md: 0 8px 24px rgba(21, 50, 91, 0.08);
+      --shadow-lg: 0 12px 32px rgba(21, 50, 91, 0.12);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      padding: 0 1.25rem 4rem;
+      /* Subtle textured academic background grid */
+      background-image: 
+        radial-gradient(at 100% 0%, rgba(21, 50, 91, 0.05) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, rgba(30, 107, 71, 0.04) 0px, transparent 50%),
+        linear-gradient(to right, #edf2f7 1px, transparent 1px),
+        linear-gradient(to bottom, #edf2f7 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+      color: var(--text-dark);
+      line-height: 1.75;
+      padding: 0 1.25rem 5rem;
     }
 
-    .container { max-width: 820px; margin: 0 auto; }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
 
-    header {
-      padding: 4rem 0 2.5rem;
-      border-bottom: 1px solid var(--border);
+    /* Header Profile Showcase */
+    header.profile-hero {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 3rem 2.5rem 2.5rem;
+      margin-top: 2.5rem;
+      box-shadow: var(--shadow-md);
       text-align: center;
+      position: relative;
+      overflow: hidden;
     }
 
-    h1.name {
+    header.profile-hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--primary) 0%, var(--accent-gold) 50%, var(--accent-green) 100%);
+    }
+
+    .crest-wrapper {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 1.25rem;
+      background: #edf2f9;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #d2deec;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .crest-wrapper svg {
+      width: 38px;
+      height: 38px;
+      fill: var(--primary);
+    }
+
+    h1.author-name {
       font-family: 'Cinzel', serif;
-      font-size: 2.3rem;
+      font-size: 2.4rem;
+      font-weight: 700;
       color: var(--primary);
       letter-spacing: 0.5px;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.35rem;
     }
 
-    .tagline {
-      font-size: 1.05rem;
-      color: var(--muted);
-      font-weight: 400;
+    .academic-title {
+      font-size: 1rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-bottom: 1.25rem;
+    }
+
+    .profile-actions {
+      display: flex;
+      justify-content: center;
+      gap: 0.85rem;
       margin-bottom: 1.5rem;
+    }
+
+    .btn-linkedin {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #0077b5;
+      color: #ffffff;
+      padding: 0.5rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0, 119, 181, 0.25);
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .btn-linkedin:hover {
+      background-color: #005e93;
+      transform: translateY(-1px);
+    }
+
+    .btn-linkedin svg {
+      width: 16px;
+      height: 16px;
+      fill: #ffffff;
     }
 
     .badges {
@@ -68,263 +155,422 @@
     }
 
     .badge {
-      background: #eef2f6;
+      background: #f1f5f9;
       color: var(--primary);
-      font-size: 0.82rem;
-      font-weight: 500;
-      padding: 0.3rem 0.8rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.3rem 0.85rem;
       border-radius: 999px;
+      border: 1px solid #cbd5e1;
     }
 
-    section { margin-top: 3.5rem; }
+    /* Section Styling */
+    section {
+      margin-top: 3rem;
+    }
 
-    h2.section-title {
-      font-family: 'Lora', serif;
-      font-size: 1.6rem;
-      color: var(--primary);
-      margin-bottom: 1.2rem;
+    .section-header {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.65rem;
+      margin-bottom: 1.25rem;
     }
 
-    .article-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 2.2rem;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+    .section-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: #e9eff8;
+      color: var(--primary);
     }
 
-    .article-header h3 {
+    .section-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    h2.section-heading {
       font-family: 'Lora', serif;
       font-size: 1.5rem;
-      color: #1a1a1a;
-      line-height: 1.4;
-      margin-bottom: 0.8rem;
+      font-weight: 600;
+      color: var(--primary);
     }
 
-    .meta-details {
-      font-size: 0.85rem;
-      color: var(--accent);
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.2rem;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Research Card */
+    .article-header h3 {
+      font-family: 'Lora', serif;
+      font-size: 1.4rem;
+      color: #111827;
+      line-height: 1.4;
+      margin-bottom: 0.4rem;
+    }
+
+    .article-meta {
+      font-size: 0.82rem;
+      color: var(--accent-green);
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 1.5rem;
+      letter-spacing: 0.6px;
+      margin-bottom: 1.35rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
     }
 
     .abstract-box {
       background: #f7faf8;
-      border-left: 4px solid var(--accent);
-      padding: 1.2rem;
-      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--accent-green);
+      padding: 1.25rem 1.4rem;
       border-radius: 0 8px 8px 0;
       font-size: 0.95rem;
-      font-style: italic;
+      line-height: 1.7;
+      margin-bottom: 1.35rem;
+      border-top: 1px solid #edf4ef;
+      border-bottom: 1px solid #edf4ef;
+      border-right: 1px solid #edf4ef;
     }
 
-    .article-body p {
-      font-family: 'Lora', serif;
-      font-size: 1.05rem;
-      margin-bottom: 1.2rem;
-      color: #333333;
+    .key-points {
+      margin-left: 1.35rem;
+      font-size: 0.94rem;
+      color: #374151;
+      margin-bottom: 1.25rem;
     }
 
-    .quote {
-      font-style: italic;
+    .key-points li {
+      margin-bottom: 0.45rem;
+    }
+
+    /* Academic Background / Portals */
+    .degree-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .degree-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.1rem 1.35rem;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      background: #fafbfc;
+      transition: all 0.2s ease;
+    }
+
+    .degree-item:hover {
+      border-color: var(--border-focus);
+      background: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .degree-details {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .uni-badge-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      background: #edf2f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: var(--primary);
-      padding: 0.8rem 1.2rem;
-      background: #f0f4f8;
-      border-radius: 6px;
-      margin: 1.2rem 0;
-      display: block;
+      flex-shrink: 0;
     }
 
-    .pitch-card {
-      background: linear-gradient(135deg, #1e3a5f 0%, #152840 100%);
-      color: #ffffff;
-      border-radius: 12px;
-      padding: 2.2rem;
-      margin-top: 1rem;
+    .uni-badge-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
     }
 
-    .pitch-card h3 {
-      font-family: 'Lora', serif;
-      font-size: 1.4rem;
-      margin-bottom: 0.8rem;
-      color: #ffd166;
-    }
-
-    .pitch-card p, .pitch-card ul { color: #e0e8f0; font-size: 0.98rem; }
-    .pitch-card ul { margin-left: 1.5rem; margin-bottom: 1.5rem; }
-
-    .btn {
-      display: inline-block;
-      background-color: #ffd166;
-      color: #1e3a5f;
+    .degree-info h4 {
+      font-size: 0.98rem;
+      color: var(--primary);
       font-weight: 600;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: opacity 0.2s;
+      margin-bottom: 0.15rem;
     }
-    .btn:hover { opacity: 0.9; }
+
+    .degree-info span {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    .ext-portal-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-decoration: none;
+      white-space: nowrap;
+      padding: 0.45rem 0.9rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      background: #ffffff;
+      transition: all 0.2s ease;
+    }
+
+    .ext-portal-btn:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .ext-portal-btn svg {
+      width: 12px;
+      height: 12px;
+      fill: currentColor;
+    }
+
+    /* Collaboration & Seminars */
+    .collab-box {
+      border-left: 5px solid var(--primary);
+      background: #ffffff;
+    }
+
+    .collab-box ul {
+      margin-left: 1.35rem;
+      margin-top: 0.8rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.94rem;
+      color: #374151;
+    }
+
+    .collab-box li {
+      margin-bottom: 0.5rem;
+    }
+
+    .email-container {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #f1f5f9;
+      padding: 0.45rem 1rem;
+      border-radius: 6px;
+      font-size: 0.92rem;
+      color: var(--primary);
+      font-weight: 600;
+      border: 1px solid #cbd5e1;
+    }
+
+    .email-container a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .email-container a:hover {
+      text-decoration: underline;
+    }
 
     footer {
-      margin-top: 4rem;
+      margin-top: 4.5rem;
       text-align: center;
-      font-size: 0.85rem;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
       padding-top: 2rem;
-    }
-
-    /* PDF Button */
-    .pdf-btn {
-      display: inline-block;
-      background: #1e3a5f;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 1rem;
-      transition: all 0.2s;
-    }
-    .pdf-btn:hover { background: #152840; }
-
-    /* Print-friendly styles */
-    @media print {
-      body { background: white; padding: 0; }
-      .container { max-width: 100%; }
-      .pitch-card, .btn, footer { display: none !important; }
-      .article-card { box-shadow: none; border: 1px solid #ccc; }
-      .section-title { page-break-after: avoid; }
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <!-- Header -->
-    <header>
-      <h1 class="name">Enver Adalı</h1>
-      <p class="tagline">English Literature Researcher | Educator | Digital Humanities Enthusiast</p>
+
+    <!-- Profile Hero Card with University Crest Element -->
+    <header class="profile-hero">
+      <div class="crest-wrapper" title="Academic Seal">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/>
+        </svg>
+      </div>
+
+      <h1 class="author-name">Enver Adalı</h1>
+      <p class="academic-title">
+        English Language & Literature • Translation Studies Researcher<br>
+        İstanbul Beykent University Alumni
+      </p>
+
+      <div class="profile-actions">
+        <a href="https://www.linkedin.com/in/enver-adalı/" target="_blank" rel="noopener noreferrer" class="btn-linkedin">
+          <svg viewBox="0 0 24 24">
+            <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/>
+          </svg>
+          LinkedIn Profile ↗
+        </a>
+      </div>
+
       <div class="badges">
-        <span class="badge">M.A. English Language & Literature</span>
+        <span class="badge">Literary Criticism</span>
         <span class="badge">Ecofeminist Theory</span>
-        <span class="badge">Dystopian Narratives</span>
-        <span class="badge">Digital Curriculum & Web Tech</span>
+        <span class="badge">Translation Technologies</span>
+        <span class="badge">Digital Humanities</span>
       </div>
     </header>
 
-    <!-- Main Article -->
-    <section id="article">
-      <h2 class="section-title">Featured Research & Publication</h2>
-      <article class="article-card">
+    <!-- Research Summary Section -->
+    <section>
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M19 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H19C20.1 22 21 21.1 21 20V4C21 2.9 20.1 2 19 2M19 20H6V4H7V13L9.5 11.5L12 13V4H19V20Z"/>
+          </svg>
+        </div>
+        <h2 class="section-heading">Featured Research Summary</h2>
+      </div>
+
+      <div class="card">
         <div class="article-header">
           <h3>Ecofeminist Approaches in Dystopian Narratives: The Domination of Nature and Women</h3>
-          <p class="meta-details">Master's Thesis Monograph • Critical Ecocriticism & Biopolitics</p>
+          <p class="article-meta">
+            Critical Monograph • Aldous Huxley's <em>Brave New World</em> • Theoretical Framework: Karen J. Warren[cite: 1]
+          </p>
         </div>
 
         <div class="abstract-box">
-          <strong>Abstract:</strong> This paper investigates the conceptual and material intersections between patriarchal domination and ecological degradation within 20th-century dystopian literature. Drawing on ecofeminist frameworks articulated by Carolyn Merchant and Karen J. Warren, this study examines how Margaret Atwood’s <em>The Handmaid’s Tale</em> and Aldous Huxley’s <em>Brave New World</em> mirror the historical transition from organicism to mechanistic exploitation. In both narratives, the female reproductive body and the biosphere are systematically disassembled, moralized, and instrumentalized by totalizing states to enforce sociopolitical stability.
+          <strong>Abstract:</strong> This study explores the structural intersection between patriarchal control and environmental exploitation in dystopian literature[cite: 1]. Utilizing Karen J. Warren's concepts of the <em>"logic of domination"</em> and <em>oppositional value dualisms</em>, the paper examines how the World State establishes totalizing stability by replacing natural reproduction with mechanized technology and suppressing organic ecological ties[cite: 1].
         </div>
 
-        <div class="article-body">
-          <h4>1. Theoretical Framework: The Logic of Domination and the Mechanistic Worldview</h4>
-          <p>
-            Ecofeminist critical theory posits that the systematic exploitation of the biosphere and the historic subjugation of women share an ideological foundation rooted in Western patriarchal dualisms. In her foundational treatise <em>The Death of Nature</em>, Carolyn Merchant demonstrates how the Scientific Revolution supplanted the organic view of the Earth as a living mother with a mechanistic model that conceived nature as dead, inert matter designed for commercial penetration and mastery (Merchant 127). This shift legitimized the simultaneous mastery of ecological systems and the redefinition of feminine autonomy under scientific and legal rationalism.
-          </p>
-          <p>
-            Expanding this critique, Karen J. Warren identifies the operational motor of patriarchal hierarchies as the "logic of domination"—an oppressive conceptual framework that presumes moral superiority justifies subordination (Warren 46). Dystopian literature magnifies Warren's premise by illustrating totalizing regimes wherein institutional power formalizes this subordination into rigid biopolitical infrastructure.
-          </p>
+        <ul class="key-points">
+          <li><strong>Technological Subjugation:</strong> Eradication of maternal biological autonomy via the Bokanovsky Process to secure the artificial hegemony of culture over nature[cite: 1].</li>
+          <li><strong>Bodily Reduction:</strong> Social conditioning of female subjectivity into commodified, utilitarian "pneumatic" objects[cite: 1].</li>
+          <li><strong>Emotional Containment:</strong> The mandatory reliance on soma as chemical pacification that prevents critical consciousness and authentic feeling[cite: 1].</li>
+        </ul>
 
-          <span class="quote">
-            "The logic of domination provides the moral premise that justifies subordination: value-hierarchical thinking maps difference into moral inferiority, rationalizing the containment of both feminine subjectivity and organic environments." (Warren 47)
-          </span>
-
-          <h4>2. Margaret Atwood’s Gilead: The Weaponization of Ecological Collapse</h4>
-          <p>
-            In Margaret Atwood’s <em>The Handmaid’s Tale</em>, Gilead’s theocratic apparatus emerges directly from cumulative anthropogenic disaster: nuclear contamination, toxic dumping, and chemical blights have induced widespread infertility. Rather than prompting holistic ecological restoration, the regime leverages environmental ruin to sanction absolute reproductive servitude. The female body is cleaved from individual subjectivity and reclassified strictly in agricultural and resource-based terminology.
-          </p>
-          <p>
-            Offred recounts how Handmaids are perceived by the state: <em>"We are two-legged wombs, that’s all: sacred vessels, ambulatory chalices"</em> (Atwood 136). The state's instrumental logic reaches its zenith in the binary segregation of female populations into productive livestock (Handmaids) and expendable detritus ("Unwomen"). Unwomen are deported to "the Colonies" to scrape radioactive soil and hazardous industrial waste until death (Atwood 248), literalizing the ecofeminist argument that the disposable female body is weaponized to absorb the shocks of industrial failure.
-          </p>
-
-          <h4>3. Huxley’s World State: Technocratic Eradication of Organic Attachment</h4>
-          <p>
-            While Atwood’s regime manages environmental disease, Aldous Huxley’s <em>Brave New World</em> presents an alternative dystopia where nature is not toxified, but hyper-rationalized, sterilized, and replaced by synthetic manufacture. In the World State, the organic mother has been eliminated through ectogenesis (the Bokanovsky Process), eradicating natural kinship and bodily maternity in favor of state-controlled hatcheries (Huxley 14).
-          </p>
-          <p>
-            Furthermore, the state recognizes that spontaneous organic affinity poses an existential threat to consumption-driven capitalism. In the infant conditioning rooms, lower-caste children are subjected to electric shocks and alarms whenever they touch blossoms:
-          </p>
-
-          <span class="quote">
-            "A love of nature keeps no factories busy. It was decided to abolish the love of nature, at any rate among the lower classes; to abolish the love of nature, but not the tendency to consume transport." (Huxley 23)
-          </span>
-
-          <p>
-            Huxley prefigures Merchant’s critique of the mechanized cosmos: by alienating humanity from natural rhythm and eliminating biological reproduction, the state achieves total psychological and somatic pacification.
-          </p>
-
-          <h4>4. Conclusion</h4>
-          <p>
-            Read together through an ecofeminist lens, Atwood and Huxley delineate two trajectories of the same totalitarian vector. Whether through Gilead's agrarian fundamentalism or the World State's hyper-technological eradication of maternity, dystopian fiction underscores that the subjugation of the ecological sphere and the suppression of female self-determination are indivisible mechanisms of authoritarian hegemony.
-          </p>
-
-          <!-- Works Cited -->
-          <hr style="margin: 2.5rem 0 1.5rem; border: none; border-top: 1px solid var(--border);">
-          <h4 style="font-family: 'Lora', serif; font-size: 1.25rem; margin-bottom: 1rem; color: var(--primary);">Works Cited</h4>
-          <div class="works-cited" style="font-size: 0.92rem; line-height: 1.65; color: #444;">
-            <p style="padding-left: 2rem; text-indent: -2rem; margin-bottom: 0.8rem;">
-              Atwood, Margaret. <em>The Handmaid’s Tale</em>. Anchor Books, 1998.
-            </p>
-            <p style="padding-left: 2rem; text-indent: -2rem; margin-bottom: 0.8rem;">
-              Huxley, Aldous. <em>Brave New World</em>. Harper Perennial Modern Classics, 2006.
-            </p>
-            <p style="padding-left: 2rem; text-indent: -2rem; margin-bottom: 0.8rem;">
-              Merchant, Carolyn. <em>The Death of Nature: Women, Ecology, and the Scientific Revolution</em>. Harper & Row, 1980.
-            </p>
-            <p style="padding-left: 2rem; text-indent: -2rem; margin-bottom: 0.8rem;">
-              Warren, Karen J. <em>Ecofeminist Philosophy: A Western Perspective on What It Is and Why It Matters</em>. Rowman & Littlefield Publishers, 2000.
-            </p>
-          </div>
-
-          <!-- PDF Download Button -->
-          <div style="text-align: center; margin-top: 2rem;">
-            <a href="#" onclick="window.print(); return false;" class="pdf-btn">📥 Download / Print as PDF</a>
-          </div>
-        </div>
-      </article>
+        <p style="font-size: 0.85rem; color: var(--text-muted); font-style: italic;">
+          * Monograph prepared for academic exchange. Full text, complete theoretical references, and citation data are open upon scholarly inquiry[cite: 1].
+        </p>
+      </div>
     </section>
 
-    <!-- Marmara University Pitch -->
-    <section id="academic-services">
-      <h2 class="section-title">Academic Collaboration & Digital Humanities</h2>
-      <div class="pitch-card">
-        <h3>To the Marmara University English Language & Literature Faculty</h3>
-        <p>Dear Professors and Colleagues,</p>
-        <p>
-          As an English Literature researcher passionately bridging the gap between literary critique and digital humanities, I develop open-access web repositories, customized academic archive portfolios, and pedagogical digital tools.
+    <!-- Academic Background & Affiliation Portals -->
+    <section>
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/>
+          </svg>
+        </div>
+        <h2 class="section-heading">Academic Background & University Portals</h2>
+      </div>
+
+      <div class="card">
+        <div class="degree-list">
+
+          <!-- M.A. Degree -->
+          <div class="degree-item">
+            <div class="degree-details">
+              <div class="uni-badge-icon" title="Graduate Studies">
+                <svg viewBox="0 0 24 24"><path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/></svg>
+              </div>
+              <div class="degree-info">
+                <h4>M.A. in English Language and Literature</h4>
+                <span>İstanbul Beykent University • Graduate Education Institute</span>
+              </div>
+            </div>
+            <a href="https://lisansustu.beykent.edu.tr/yuksek-lisans/ingiliz-dili-ve-edebiyati-abd" target="_blank" rel="noopener noreferrer" class="ext-portal-btn">
+              Program Portal
+              <svg viewBox="0 0 24 24"><path d="M14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V12H19V19Z"/></svg>
+            </a>
+          </div>
+
+          <!-- B.A. Degree -->
+          <div class="degree-item">
+            <div class="degree-details">
+              <div class="uni-badge-icon" title="Undergraduate Degree">
+                <svg viewBox="0 0 24 24"><path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/></svg>
+              </div>
+              <div class="degree-info">
+                <h4>B.A. in Translation and Interpreting (English/Turkish)</h4>
+                <span>İstanbul Beykent University • Faculty of Arts and Sciences</span>
+              </div>
+            </div>
+            <a href="https://www.beykent.edu.tr/aday-ogrenci/bolumler-programlar/lisans/fen-edebiyat-fakultesi/ingilizce-mutercim-ve-tercumanlik" target="_blank" rel="noopener noreferrer" class="ext-portal-btn">
+              Department Portal
+              <svg viewBox="0 0 24 24"><path d="M14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19A2 2 0 0 0 21 19V12H19V19Z"/></svg>
+            </a>
+          </div>
+
+          <!-- Department Message -->
+          <div class="degree-item">
+            <div class="degree-details">
+              <div class="uni-badge-icon" title="Faculty Overview">
+                <svg viewBox="0 0 24 24"><path d="M13 14H11V9H13M13 18H11V16H13M1 21H23L12 2L1 21Z"/></svg>
+              </div>
+              <div class="degree-info">
+                <h4>Faculty of Arts and Sciences: Department Overview</h4>
+                <span>Academic mission and departmental vision</span>
+              </div>
+            </div>
+            <a href="https://fef.beykent.edu.tr/bolumler/ingiliz-dili-ve-edebiyati/bolum-mesaji/fen-edebiyat-fakültesi" target="_blank" rel="noopener noreferrer" class="ext-portal-btn">
+              Faculty Message
+              <svg viewBox="0 0 24 24"><path d="M14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V12H19V19Z"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Collaboration & Workshops -->
+    <section>
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2A10 10 0 0 0 2 12A10 10 0 0 0 12 22A10 10 0 0 0 22 12A10 10 0 0 0 12 2M11 16.5L6.5 12L7.91 10.59L11 13.67L16.59 8.09L18 9.5L11 16.5Z"/>
+          </svg>
+        </div>
+        <h2 class="section-heading">Workshops & Academic Support</h2>
+      </div>
+
+      <div class="card collab-box">
+        <p style="font-size: 0.95rem; color: #374151;">
+          To support researchers, students, and faculty across the humanities, I offer complimentary academic sessions and technical assistance:
         </p>
         <ul>
-          <li><strong>Digital Portfolios:</strong> Customized GitHub Pages and repositories for faculty research output, seminar archives, and lecture notes.</li>
-          <li><strong>Curriculum & Language Portals:</strong> Interactive vocabulary, literary concordance platforms, and student reading portals.</li>
-          <li><strong>Digital Humanities Collaboration:</strong> Assisting research projects that require computational text tools and accessible online presentation.</li>
+          <li><strong>Computer-Assisted Translation (CAT) Workshops:</strong> Practical guidance on translation memories, termbases, and automated workflows using <strong>SDL Trados Studio</strong>.</li>
+          <li><strong>Audiovisual Translation & Subtitling:</strong> Best practices in timing, line constraints, and synchronization using <strong>Subtitle Edit</strong>.</li>
+          <li><strong>Digital Humanities Repositories:</strong> Assisting scholars in creating accessible, open-access reading portals and course archives on GitHub.</li>
         </ul>
-        <p>
-          If you or your research group would like a personalized academic website, syllabus database, or digital project hub built at no cost, I would be honored to assist you.
+        <p style="margin-bottom: 0.85rem; font-size: 0.92rem; color: var(--text-muted);">
+          Scholars and department groups interested in scheduling an online session or collaborating on digital materials can connect directly:
         </p>
-        <a href="mailto:enveradali195@gmail.com" class="btn">Get in Touch via Email</a>
+        <div class="email-container">
+          ✉️ <a href="mailto:enveradali195@gmail.com">enveradali195@gmail.com</a>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer>
-      <p>© Enver Adalı • Marmara University Academic Outreach & Digital Archives</p>
-      <p>Reach me directly: <a href="mailto:enveradali195@gmail.com" style="color: var(--primary);">enveradali195@gmail.com</a></p>
+      <p>© Enver Adalı • Open Access Academic Portfolio</p>
+      <p>Graduate of İstanbul Beykent University</p>
     </footer>
+
   </div>
 
 </body>
